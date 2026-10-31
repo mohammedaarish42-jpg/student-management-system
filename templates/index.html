@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 id="form-title">Add Student</h2>
+            <form id="student-form">
+                <input type="hidden" id="student-id">
+                <input type="text" id="name" placeholder="Full name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="course" placeholder="Course" required>
+                <input type="number" id="age" placeholder="Age" min="1" required>
+                <div class="buttons">
+                    <button type="submit" id="submit-btn">Add Student</button>
+                    <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="list-header">
+                <h2>Students</h2>
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Age</th><th>Actions</th></tr>
+                </thead>
+                <tbody id="student-table"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
