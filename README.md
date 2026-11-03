@@ -4,6 +4,8 @@ A web app to add, view, edit and delete student records.
 
 **Technologies:** HTML, CSS, JavaScript (front end), Python/Flask (back end), MySQL (database).
 
+**Live demo:** https://mohammedaarish42-jpg.github.io/student-management-system/ (a browser-only version in `docs/` that saves data in your browser instead of using Flask and MySQL)
+
 ## Files
 - `templates/index.html` – the page (HTML)
 - `static/style.css` – the look (CSS)
